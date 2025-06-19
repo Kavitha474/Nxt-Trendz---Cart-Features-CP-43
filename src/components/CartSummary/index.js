@@ -1,12 +1,12 @@
 // Write your code here
 import CartContext from '../../context/CartContext'
-
 import './index.css'
 
 const CartSummary = () => (
   <CartContext.Consumer>
     {value => {
       const {cartList} = value
+
       let total = 0
       cartList.forEach(eachCartItem => {
         total += eachCartItem.price * eachCartItem.quantity
@@ -32,5 +32,4 @@ const CartSummary = () => (
     }}
   </CartContext.Consumer>
 )
-
 export default CartSummary
