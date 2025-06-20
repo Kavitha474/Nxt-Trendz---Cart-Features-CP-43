@@ -25,7 +25,7 @@ const CartSummary = () => (
             <Popup
               modal
               trigger={
-                <button className="checkout-btn" type="button">
+                <button id="checkout-button" type="button">
                   Checkout
                 </button>
               }
